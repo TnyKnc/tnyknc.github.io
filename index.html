@@ -1,274 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="tr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TnyKnc</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <!-- Font -->
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
-
-    <!-- Stylesheets -->
-
-    <!--<link href="common-css/bootstrap.css" rel="stylesheet">-->
-
-    <link href="common-css/ionicons.css" rel="stylesheet">
-
-    <link href="common-css/fluidbox.min.css" rel="stylesheet">
-
-    <link href="01-cv-portfolio/css/styles.css" rel="stylesheet">
-
-    <link href="01-cv-portfolio/css/responsive.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#home-section"><span>@</span>TnyKnc</a>
-            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav nav ml-auto">
-                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Info</span></a></li>
-
-                </ul>
-            </div>
+<body>
+    <div id="app" class="bios-container">
+        <!-- Header -->
+        <div class="header">
+            <span id="header-text">Tunay Kınıcı - System Utility</span>
         </div>
-    </nav>
-    <section class="hero-wrap js-fullheight">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-                <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-                    <div class="text text-center">
-                        <span class="subheading">Hey! I am</span>
-                        <h1>Tunay KINICI</h1>
-                        <h2>I'm a
-                            <span class="txt-rotate" data-period="2000" data-rotate='[ "Developer" ]'></span>
-                        </h2>
-                    </div>
+
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="tab-btn active" data-tab="Main">Main</button>
+            <button class="tab-btn" data-tab="Advanced">Advanced</button>
+            <button class="tab-btn" data-tab="Security">Security</button>
+            <button class="tab-btn" data-tab="Boot">Boot</button>
+            <button class="tab-btn" data-tab="Exit">Exit</button>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Left Panel - CV Content -->
+            <div class="left-panel">
+                <div id="cv-items" class="cv-items">
+                    <!-- CV items will be populated by JavaScript -->
                 </div>
             </div>
-        </div>
-        </div>
 
-    </section>
-
-    <section class="intro-section" id="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1 col-lg-2"></div>
-                <div class="col-md-10 col-lg-8">
-                    <div class="intro">
-                        <div class="profile-img"><img src="images/pp.jpeg" alt=""></div>
-                        <h2><b>Tunay KINICI</b></h2>
-                        <h4 class="font-yellow">Computer Engineer</h4>
-                        <ul class="information margin-tb-30">
-                            <li><b>E-MAIL : </b>tunaykinici@gmail.com</li>
-                        </ul>
-                        <ul class="social-icons">
-                            <li><a href="https://www.linkedin.com/in/tnyknc/"><i class="ion-logo-linkedin"></i></a></li>
-                            <li><a href="https://github.com/TnyKnc"><i class="ion-logo-github"></i></a></li>
-                            <li><a href="https://www.instagram.com/tnyknc/"><i class="ion-logo-instagram"></i></a></li>
-                            <li><a href="https://www.facebook.com/TnyKnc"><i class="ion-logo-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/TnyKnc"><i class="ion-logo-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- intro -->
+            <!-- Right Panel - Help -->
+            <div class="right-panel">
+                <div class="help-header">
+                    <h3 id="help-title">System Information</h3>
                 </div>
-                <!-- col-sm-8 -->
+                <div id="help-content" class="help-content">
+                    Select an item to view system information and professional details.
+                </div>
+
+
             </div>
-            <!-- row -->
         </div>
-        <!-- container -->
-    </section>
 
+        <!-- Touch Navigation for Mobile -->
+        <div class="touch-nav">
+            <button class="touch-btn" onclick="navigateItems(-1)">↑ Önceki</button>
+            <button class="touch-btn" onclick="navigateItems(1)">↓ Sonraki</button>
+            <button class="touch-btn" onclick="navigateTabs(-1)">← Önceki Tab</button>
+            <button class="touch-btn" onclick="navigateTabs(1)">→ Sonraki Tab</button>
+        </div>
 
-
-    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <nav id="navi">
-                        <ul>
-                            <li><a href="#page-1">Education</a></li>
-                            </br>
-                            <li><a href="#page-2">Experience</a></li>
-
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-md-9">
-                    <div id="page-1" class="page one">
-                        <h2 class="heading">Education</h2>
-
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <span class="date">2015-2020</span>
-                                <h2>University</h2>
-                                <span class="position">Sakarya University</span>
-                                <p>Computer Engineer</p>
-                            </div>
+        <!-- Bottom Function Keys -->
+        <div class="footer">
+            <div class="footer-left">
+                <span><strong>F1</strong> <span id="help-text">Help</span></span>
+                <span><strong>↑↓</strong> <span id="navigate-text">Navigate</span></span>
+                <span><strong>←→</strong> <span id="tab-navigate-text">Tabs</span></span>
+                <span><strong>Enter</strong> <span id="details-text">Details</span></span>
+            </div>
+            <div class="footer-right">
+                <span><strong>F9</strong> <span id="print-text">Print</span></span>
+                <div class="language-dropdown">
+                    <span id="language-btn" class="language-btn">
+                        <strong>F2</strong> <span id="language-text">Dil</span> (<span id="current-language">TR</span>)
+                    </span>
+                    <div id="language-menu" class="language-menu hidden">
+                        <div class="language-option" data-lang="TR">
+                            <span class="flag">🇹🇷</span>
+                            <span>Türkçe (TR)</span>
                         </div>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <span class="date">2010-2014</span>
-                                <h2>High School</h2>
-                                <span class="position">High School Silivri Anadolu Teknik</span>
-                                <p>Computer technologies - Database Programming</p>
-                            </div>
+                        <div class="language-option" data-lang="EN">
+                            <span class="flag">🇺🇸</span>
+                            <span>English (EN)</span>
                         </div>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <span class="date">2002-2010</span>
-                                <h2>Primary School</h2>
-                                <span class="position">Primary School of the Silivri Hasan Özvarnalı</span>
-                                <!--<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>-->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="page-2" class="page two">
-                        <h2 class="heading">Experience</h2>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <span class="date">2019-Now</span>
-                                <h2>Software Developer</h2>
-                                <span class="position">Yelkenci Group</span>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <span class="date">2018-2018</span>
-                                <h2>System Engineering Intern</h2>
-                                <span class="position">Portakal Technology</span>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <span class="date">2017-2018</span>
-                                <h2>President</h2>
-                                <span class="position">Sakarya University - Free Software Community</span>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <span class="date">2017-2018</span>
-                                <h2>IT Support</h2>
-                                <span class="position">Sakarya University</span>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <span class="date">2013-2014</span>
-                                <h2>Intern</h2>
-                                <span class="position">Hakan Bilgisayar</span>
-                                <p></p>
-                            </div>
+                        <div class="language-option" data-lang="DE">
+                            <span class="flag">🇩🇪</span>
+                            <span>Deutsch (DE)</span>
                         </div>
                     </div>
                 </div>
+                <span><strong>F10</strong> <span id="contact-text">Contact</span></span>
             </div>
         </div>
-    </section>
+    </div>
 
-
-
-
-
-    <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-7 ftco-animate text-center">
-                    <h2>I'm <span>@TnyKnc</span> :)</h2>
-
-                    <!--<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>-->
-                </div>
-            </div>
+    <!-- Easter Egg Elements -->
+    <div id="matrix-easter-egg" class="easter-egg">
+        <div style="text-align: center;">
+            <div style="font-size: 24px; margin-bottom: 10px;">🌌 Matrix Mode Aktif</div>
+            <div>Welcome to the Matrix, Neo...</div>
+            <div style="margin-top: 10px; font-size: 12px;">ESC tuşuna basarak çıkın</div>
         </div>
-    </section>
+    </div>
 
+    <div id="konami-easter-egg" class="easter-egg">
+        <div style="text-align: center;">
+            <div style="font-size: 24px; margin-bottom: 10px;">🎮 Konami Code!</div>
+            <div>↑↑↓↓←→←→BA</div>
+            <div style="margin-top: 10px; font-size: 12px;">30 Extra Lives!</div>
+        </div>
+    </div>
 
-
-
-
-
-
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-
-    <script src="js/main.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
-</html>
+</html> 

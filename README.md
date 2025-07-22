@@ -1,1 +1,0 @@
-# tnyknc.github.io
